@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naeche Chukwuemeka – About</title>
+
+  <!-- Shared base first -->
+  <link rel="stylesheet" href="css/base.css">
+
+  <!-- Viewport-specific styles (separate files as required by brief) -->
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 992px)">
+  <link rel="stylesheet" href="css/laptop.css" media="(min-width: 993px)">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1 class="site-title"><a href="index.html">Naeche Chukwuemeka</a></h1>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="about">
+  <img class="about-photo" src="img/profile.jpg" alt="Photo of Naeche Chukwuemeka">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>I am 19 years of age and I am currently enrolled in the Tech Management program in the FBIT Department in Ontario Tech University.
+      My hobbies include sporting activities, reading and making a living for myself.
+    </p>
+  </div>
+
+  <section aria-labelledby="introvid">
+    <h3 id="introvid">Introduction Video (45–60s)</h3>
+    <video controls poster="img/poster.jpg" width="640">
+      <source src="video/intro.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </section>
+</article>
+
+</main>
+
+  <footer>
+    <div class="wrap">
+      <p>Contact: chinaechelum.chukwuemeka@ontariotechu.net</p>
+      <p>&copy; <span id="year"></span> Naeche Chukwuemeka</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>

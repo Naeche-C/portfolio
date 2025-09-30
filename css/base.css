@@ -1,0 +1,55 @@
+:root {
+  --bg1: #97e00f;   /* choose from your Adobe scheme */
+  --bg2: #334818;
+  --ink: #222222;
+  --paper: #0DE67F;
+  --accent: #2581eb;
+}
+
+/* Fluid wrapper */
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+html, body { height: 100%; }
+body {
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  /* linear + angled linear gradient (document this in README) */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+header { background: linear-gradient(90deg, var(--bg1), var(--bg2)); color: white; }
+.site-title { font-size: 1.25rem; margin: 0; }
+
+/* Nav without flex: inline-block list */
+.nav { list-style: none; margin: 8px 0; padding: 0; text-align: right; }
+.nav li { display: inline-block; margin-left: 12px; }
+.nav a { color: #fff; text-decoration: none; padding: 6px 10px; border-radius: 6px; }
+.nav a:hover, .btn:hover { text-decoration: underline; }
+
+.hero { text-align: center; padding: 18vh 1rem; color: #fff;
+  background: linear-gradient(45deg, rgba(75,108,183,.85), rgba(24,40,72,.85)), url('img/hero.jpg') center/cover no-repeat;
+}
+
+.btn { display: inline-block; background: var(--accent); color: white; padding: 10px 16px; border-radius: 6px; }
+
+.about { padding: 2rem 0; }
+.about-photo { width: 200px; height: auto; border-radius: 8px; float: left; margin: 0 1rem 1rem 0; }
+.about-text { overflow: auto; }
+
+/* Projects “cards” using inline-block (no flex/grid) */
+.cards { text-align: center; }
+.card {
+  display: inline-block; vertical-align: top; width: 100%; max-width: 320px;
+  margin: 0.75rem; padding: 1rem; background: var(--paper); border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+/* Contact form */
+form { max-width: 600px; margin: 1rem auto; background: var(--paper); padding: 1rem; border-radius: 10px; }
+label { display: block; margin-bottom: .75rem; }
+input, textarea { width: 100%; padding: .6rem; border: 1px solid #ccc; border-radius: 6px; }
+
+/* Footer */
+footer { background: #111; color: #bbb; margin-top: 3rem; padding: 1rem 0; }
+footer a { color: #ddd; }

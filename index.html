@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naeche Chukwuemeka – Home</title>
+
+  <!-- Shared base first -->
+  <link rel="stylesheet" href="css/base.css">
+
+  <!-- Viewport-specific styles (separate files as required by brief) -->
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)">
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 601px) and (max-width: 992px)">
+  <link rel="stylesheet" href="css/laptop.css" media="(min-width: 993px)">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1 class="site-title"><a href="index.html">Naeche Chukwuemeka</a></h1>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+   <section class="hero">
+  <h2>Hello, I am Naeche Chukwuemeka</h2>
+  <p>Welcome to my portfolio site.</p>
+  <p><a class="btn" href="about.html">Learn more about me</a></p>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Contact: chinaechelum.chukwuemeka@ontariotechu.net</p>
+      <p>&copy; <span id="year"></span> Naeche Chukwuemeka</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
